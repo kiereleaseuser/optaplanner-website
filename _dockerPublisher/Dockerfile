@@ -37,4 +37,4 @@ ENV LANG en_US.UTF-8
 
 EXPOSE 4242
 
-CMD ["bash","--login", "rake"]
+CMD ["bash","--login", "rake", "rake --version"]
