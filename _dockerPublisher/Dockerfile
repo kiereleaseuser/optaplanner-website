@@ -24,6 +24,7 @@ RUN dnf install -y rsync
 RUN dnf install -y openssh-clients
 RUN dnf install -y net-tools
 RUN dnf install -y iputils
+RUN dnf install -y wget
 RUN dnf clean all
 
 RUN bash -l -c "gem install bundler awestruct"
