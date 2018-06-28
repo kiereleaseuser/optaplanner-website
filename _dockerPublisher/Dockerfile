@@ -45,4 +45,4 @@ EXPOSE 4242
 
 #CMD cd optaplanner-website-master && rake clean
 
-CMD cd optaplanner-website && ls && pwd && rake setup && rake clean build
+CMD cd optaplanner-website-master && ls && pwd && rake setup && rake clean build
