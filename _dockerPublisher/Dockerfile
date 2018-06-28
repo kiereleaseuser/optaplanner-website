@@ -39,4 +39,6 @@ ENV LANG en_US.UTF-8
 
 EXPOSE 4242
 
-CMD ["bash","--login", "rake"]
+#CMD cd optaplanner-website-master && rake clean
+
+CMD cd optaplanner-website && ls && pwd && rake setup && rake clean build
