@@ -35,8 +35,8 @@ USER jenkins
 
 WORKDIR /home/jenkins
 
-#RUN wget https://github.com/kiegroup/optaplanner-website/archive/master.zip
-#RUN unzip master.zip
+RUN wget https://github.com/kiegroup/optaplanner-website/archive/master.zip
+RUN unzip master.zip
 
 ENV HOME /home/jenkins
 ENV LANG en_US.UTF-8
@@ -44,6 +44,6 @@ ENV LANG en_US.UTF-8
 EXPOSE 4242
 
 #CMD cd optaplanner-website-master && rake clean
-CMD ["bash","--login", "rake"]
+#CMD ["bash","--login", "rake"]
 
-# CMD cd optaplanner-website-master && ls && pwd && rake setup && rake clean build
+CMD cd optaplanner-website-master && ls && pwd && rake setup && rake clean build
