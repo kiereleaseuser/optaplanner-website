@@ -34,6 +34,9 @@ USER jenkins
 
 WORKDIR /home/jenkins
 
+RUN wget https://github.com/kiegroup/optaplanner-website/archive/master.zip
+RUN unzip master.zip
+
 ENV HOME /home/jenkins
 ENV LANG en_US.UTF-8
 
